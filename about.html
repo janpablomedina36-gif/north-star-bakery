@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Our bakery story | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header>
-    <p>North Star Bakery</p>
+    <a class="brand" href="index.html"><img src="bakery-logo_c.png" alt="" width="64"> <span>North Star Bakery<small>Handmade for our neighbors</small></span></a>
     <nav aria-label="Main navigation">
       <ul>
       <li><a href="index.html">Home</a></li>
@@ -20,6 +21,7 @@
   </header>
   <main id="main-content">
     <h1>Our bakery story</h1>
+    <div class="sections">
     <section>
       <h2>How we started</h2>
       <p>We started with a simple goal: share handmade bread with
@@ -43,13 +45,14 @@
       <h2>Our audio welcome</h2>
       <p>We invite you to listen to our short welcome message.</p>
       <audio controls preload="metadata">
-        <source src="media/bakery-welcome_c.mp3" type="audio/mpeg">
+        <source src="bakery-welcome_c.mp3" type="audio/mpeg">
         Your browser does not support audio playback.
-        <a href="media/bakery-welcome_c.mp3">Download our welcome</a>.
+        <a href="bakery-welcome_c.mp3">Download our welcome</a>.
       </audio>
-      <p><a href="media/bakery-welcome_c.mp3">
+      <p><a href="bakery-welcome_c.mp3">
         Open our audio welcome directly</a></p>
     </section>
+    </div>
   </main>
   <footer>
     <p>We welcome our neighbors at North Star Bakery.</p>

@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Welcome to North Star Bakery | North Star Bakery</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a href="#main-content">Skip to main content</a>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
   <header>
-    <p>North Star Bakery</p>
+    <a class="brand" href="index.html"><img src="bakery-logo_c.png" alt="" width="64"> <span>North Star Bakery<small>Handmade for our neighbors</small></span></a>
     <nav aria-label="Main navigation">
       <ul>
       <li><a href="index.html" aria-current="page">Home</a></li>
@@ -18,12 +19,11 @@
       </ul>
     </nav>
   </header>
-  <main id="main-content">
-    <h1>Welcome to North Star Bakery</h1>
+  <main id="main-content" class="home">
+    <div class="intro"><p class="eyebrow">YOUR NEIGHBORHOOD BAKERY</p><h1>Welcome to North Star Bakery</h1>
     <p>We bake bread and sweet treats for our neighbors.
-      We welcome commuters, families, and event planners.</p>
-    <img src="media/bakery-logo_c.png"
-      alt="North Star Bakery logo" width="200">
+      We welcome commuters, families, and event planners.</p><a class="button" href="products.html">Explore our breads and treats</a></div><div class="sections">
+
     <section>
       <h2>What we are known for</h2>
       <p>We make handmade loaves, pastries, and celebration cakes.
@@ -35,8 +35,8 @@
         We invite you to ask about flavors and pickup options.</p>
       <picture>
         <source media="(min-width: 800px)"
-          srcset="media/bakery-feature-large_c.png">
-        <img src="media/bakery-feature-small_c.png"
+          srcset="bakery-feature-large_c.png">
+        <img src="bakery-feature-small_c.png"
           alt="Cookies and cupcakes arranged in a bakery display"
           width="320">
       </picture>
@@ -49,6 +49,7 @@
         We close on Sunday.</p>
       <p><a href="contact.html">Ask us about a preorder</a></p>
     </section>
+    </div>
   </main>
   <footer>
     <p>We welcome our neighbors at North Star Bakery.</p>
