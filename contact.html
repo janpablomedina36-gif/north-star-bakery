@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Contact our bakery | North Star Bakery</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -33,7 +34,9 @@
       <p>We ask you to complete the required fields marked below.
         We need a pickup date only for a preorder request.</p>
       <p>This practice form does not send or save requests.</p>
-      <form action="contact.html" method="get">
+      <p id="contact-favorites" hidden></p>
+      <p id="form-status" role="status" aria-live="polite"></p>
+      <form id="request-form" action="contact.html" method="get">
         <fieldset>
           <legend>Your contact information</legend>
           <p>
@@ -80,6 +83,7 @@
         </fieldset>
         <button type="submit">Check my practice request</button>
       </form>
+      <noscript><p>Your browser checks required fields and email format. Enable JavaScript for detailed feedback and a practice confirmation.</p></noscript>
     </section>
     </div>
   </main>

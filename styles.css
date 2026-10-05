@@ -53,3 +53,17 @@ footer p { margin:0; }
  section { padding:1.75rem; }
  footer { flex-direction:row; justify-content:space-between; }
 }
+
+/* Touchstone 4 interactive controls retain the existing bakery palette. */
+[hidden] { display: none !important; }
+.product-planner { margin: 2rem 0; padding: 1.5rem; border: 1px solid #D88C5A; border-radius: .6rem; }
+.product-list { display: flex; flex-wrap: wrap; gap: 1rem; margin: 1rem 0; }
+.product-card { flex: 1 1 230px; padding: 1rem; border: 1px solid #D88C5A; border-radius: .6rem; }
+.product-card h3 { font-family: Georgia, serif; font-size: 1.4rem; margin-top: 0; }
+.product-card button { width: 100%; }
+button[aria-pressed="true"] { outline: 3px solid #D88C5A; outline-offset: 2px; }
+.checkbox-label { display: flex; align-items: center; gap: .6rem; margin-top: 1rem; }
+.checkbox-label input { width: 1.4rem; height: 1.4rem; min-height: 1.4rem; margin: 0; }
+.field-error { display: block; font-weight: bold; color: #6B3E26; margin-top: .3rem; }
+[aria-invalid="true"] { border: 2px solid #6B3E26; }
+#form-status:not(:empty) { padding: .8rem; border: 2px solid #6B3E26; }

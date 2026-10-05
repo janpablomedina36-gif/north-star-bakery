@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Our breads and treats | North Star Bakery</title>
   <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -22,6 +23,22 @@
   <main id="main-content">
     <h1>Our breads and treats</h1>
     <p>We offer options for daily meals and family celebrations.</p>
+    <section class="product-planner" aria-labelledby="planner-title">
+      <h2 id="planner-title">Save treats for your next visit</h2>
+      <p>Choose a category and save favorites while planning a pickup. Your choices stay in this browser; availability and prices are confirmed by the bakery.</p>
+      <div id="planner-controls" hidden>
+        <label for="category-filter">Browse a category</label>
+        <select id="category-filter"><option value="all">All treats</option><option value="breads">Breads</option><option value="pastries">Pastries and cookies</option><option value="cakes">Cakes</option></select>
+        <label class="checkbox-label"><input id="favorites-only" type="checkbox"> Show saved favorites only</label>
+        <p id="planner-status" role="status" aria-live="polite"></p>
+        <div id="product-list" class="product-list"></div>
+        <p id="saved-summary"></p>
+        <p id="storage-note"></p>
+        <button id="clear-favorites" type="button">Clear saved favorites</button>
+        <p><a href="contact.html">Discuss your favorites with us</a></p>
+      </div>
+      <noscript><p>Enable JavaScript to filter treats and save favorites. You can still read all product categories below.</p></noscript>
+    </section>
     <div class="sections">
     <section>
       <h2>Breads</h2>
